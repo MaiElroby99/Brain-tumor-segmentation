@@ -1,0 +1,92 @@
+
+  .bg{
+    background-image: url('backgroound4.png') , url('brain.jpg');
+
+  }
+  .title{
+    text-align: center;
+    background-color:rgb(158, 156, 42);
+    color: white;
+    width: 35%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 15px;
+  }
+  .card{
+    width: 40%;
+    margin: auto;
+    margin-top: 0.5%;
+    
+  }
+  .card-header{
+    
+    color: white !important;
+   
+  }
+  .card-body{
+    background-color: white;
+  }
+  .upload{
+  text-align: center;
+  
+  }
+
+  .wrapper{
+  
+    width:100%;
+    height:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+  }
+    .file-upload{
+  
+      height:125px;
+      width:125px;
+      border-radius: 100px;
+      position:relative;
+      
+      display:flex;
+      justify-content:center;
+      align-items: center;  
+  
+      border:4px solid #FFFFFF;
+      overflow:hidden;
+      background-image: linear-gradient(to bottom, #1abe7a 50%, #ccc9c9 50%);
+      background-size: 100% 200%;
+      transition: all 1s;
+      color: #FFFFFF;
+      font-size:100px;
+    }
+      input[type='file']{
+  
+        height:100px;
+        width:100px;
+        position:absolute;
+        top:0;
+        left:0;
+        opacity:0;
+        cursor:pointer;
+  
+      }
+  
+      .file-upload:hover{
+  
+        background-position: 0 -100%;
+  
+        color:#1abe7a;
+  
+      }
+  @media(min-width:500)  {
+    .card{
+    width: 100%;
+    }
+  } 
+  .image-card  {
+    width: 75%;
+  }
+ 
+  img{
+    border-width: 10%;
+  }

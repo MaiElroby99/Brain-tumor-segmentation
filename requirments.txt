@@ -1,0 +1,13 @@
+Flask==1.1.2
+numpy==1.22.3
+pandas==1.3.4
+tensorflow-cpu==2.8.0
+scikit-learn==1.0.2
+gunicorn
+glob2
+opencv-python 
+Werkzeug==2.0.2
+Pillow==9.1.1
+
+
+
