@@ -1,7 +1,7 @@
 import numpy as np
 from PIL import Image
 import tensorflow as tf
-import cv2
+# import cv2
 
 def getPrediction(filename):
     
@@ -25,8 +25,8 @@ def getPrediction(filename):
 
     SIZE = 128 #Resize to same size as training images
     img_path = 'static/images/'+filename
-    img = np.asarray(Image.open(img_path)) #.resize((SIZE,SIZE)))
-    img = cv2.resize(img , (SIZE , SIZE))
+    img = np.asarray(Image.open(img_path).resize((SIZE,SIZE)))
+#     img = cv2.resize(img , (SIZE , SIZE))
     img1 = img[:,:,0]
     img2 = img[:,:,1]
     img = np.dstack([img1 , img2])
