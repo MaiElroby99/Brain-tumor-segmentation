@@ -39,7 +39,7 @@ def index():
 
 
 #Add Post method to the decorator to allow for form submission. 
-@app.route('/predict-tumor-segmentation', methods=['POST' , 'GET'])
+@app.route('/', methods=['POST' , 'GET'])
 def submit_file():
     files = glob.glob('static/images/*')
     for f in files:
@@ -67,7 +67,7 @@ def submit_file():
             image_path = f'prediction{rnd}.png'
             image_pred = os.path.join('static/images/', image_path)
             flash(image_pred)
-            return redirect('/predict-tumor-segmentation')
+            return redirect('/')
 
 
 if __name__ == "__main__":
