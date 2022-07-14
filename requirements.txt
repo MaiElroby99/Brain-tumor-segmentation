@@ -6,6 +6,7 @@ gunicorn
 glob2
 Werkzeug==2.0.2
 Pillow==9.1.1
+requests
 
 
 
